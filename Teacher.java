@@ -1,10 +1,12 @@
 public class Teacher extends Person{
-    
-    // TODO: Add fields.
+    private String subject;
+    private double salary;
 
-    public Teacher(String name, int age, String gender)
+    public Teacher(String name, int age, String gender, int subject, int salary)
     {
         super(name, age, gender);
+        this.subject = subject;
+        this.salary = salary;
     }
 
     // TODO Add methods
