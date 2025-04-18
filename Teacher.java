@@ -9,6 +9,22 @@ public class Teacher extends Person{
         this.salary = salary;
     }
 
+    public String getSubject() {
+        return subject;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public String setSubject(String s) {
+        subject = s;
+    }
+
+    public double setSalary(double sal) {
+        salary = sal;
+    }
+
     // TODO Add methods
 
     public String toString(){
