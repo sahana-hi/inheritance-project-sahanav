@@ -2,7 +2,7 @@ public class Teacher extends Person{
     private String subject;
     private double salary;
 
-    public Teacher(String name, int age, String gender, int subject, int salary)
+    public Teacher(String name, int age, String gender, String subject, double salary)
     {
         super(name, age, gender);
         this.subject = subject;
@@ -17,11 +17,11 @@ public class Teacher extends Person{
         return salary;
     }
 
-    public String setSubject(String s) {
+    public void setSubject(String s) {
         subject = s;
     }
 
-    public double setSalary(double sal) {
+    public void setSalary(double sal) {
         salary = sal;
     }
 
@@ -29,6 +29,6 @@ public class Teacher extends Person{
 
     public String toString(){
         // TODO: improve this.
-        return super.toString() + ", is a teacher!";
+        return super.toString() + ", is a teacher who teaches the subject" + subject + "and earns $" + salary + "each year";
     }
 }
